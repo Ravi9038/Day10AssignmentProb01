@@ -20,3 +20,7 @@ echo "Use Case Operation2 = $operation2"
 #computational operations Performing
 operation3=$(($thirdNum+$firstNum/$secNum))
 echo "Operation3 = $operation3"
+
+#computational operations Performing
+operation4=$(($firstNum%$secNum+$thirdNum))
+echo "Use case Operation4 $operation4"
