@@ -24,3 +24,14 @@ addDict[count2]=$operation2
 addDict[count3]=$operation3
 addDict[count4]=$operation4
 echo "Operations storing into the dictionary : ${addDict[@]}"
+
+#Read Values From Dictionary
+
+count=0
+for i in "${addDict[@]}"
+do
+#storing the dictionary values into the array
+arr[((count++))]=$i
+done
+#Print the array
+echo "Array is ${arr[@]}"
