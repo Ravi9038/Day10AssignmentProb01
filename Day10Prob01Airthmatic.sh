@@ -9,18 +9,18 @@ read -p "Enter First Value : " firstNum
 read -p "Enter the Second Number : " secNum
 read -p "Enter the Third Number : " thirdNum
 
-#computational operations Performing Usecase2
+#computational Operations
+
 operation1=$(($firstNum+$secNum*$thirdNum))
-echo "Opertations $operation1"
-
-#computational operations Performing Usecase3
 operation2=$(($firstNum*$secNum+$thirdNum))
-echo "Use Case Operation2 = $operation2"
-
-#computational operations Performing
 operation3=$(($thirdNum+$firstNum/$secNum))
-echo "Operation3 = $operation3"
-
-#computational operations Performing
 operation4=$(($firstNum%$secNum+$thirdNum))
-echo "Use case Operation4 $operation4"
+
+#declare a dictionary
+declare -A addDict
+#store the Operations into the dictionary
+addDict[count1]=$operation1
+addDict[count2]=$operation2
+addDict[count3]=$operation3
+addDict[count4]=$operation4
+echo "Operations storing into the dictionary : ${addDict[@]}"
