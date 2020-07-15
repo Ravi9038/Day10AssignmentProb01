@@ -9,6 +9,8 @@ read -p "Enter First Value : " firstNum
 read -p "Enter the Second Number : " secNum
 read -p "Enter the Third Number : " thirdNum
 
-echo "First Number = "$firstNum
-echo "Second Number = "$secNum
-echo "Third Number = "$thirdNum
+#computational operations Performing Usecase2
+
+operation1=$(($firstNum+$secNum*$thirdNum))
+
+echo "Opertations $operation1"
